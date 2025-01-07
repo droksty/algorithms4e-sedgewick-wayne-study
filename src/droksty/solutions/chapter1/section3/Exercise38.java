@@ -1,7 +1,7 @@
 package droksty.solutions.chapter1.section3;
 
-import droksty.collections.GeneralizedArrayQueue;
-import droksty.collections.GeneralizedQueue;
+import droksty.collections.GeneralizedArrayQueue;   // ADT developed for this exercise
+import droksty.collections.GeneralizedQueue;        // ADT developed for this exercise
 
 public class Exercise38 {
     public static void main(String[] args) {
