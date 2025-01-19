@@ -1,6 +1,6 @@
 package droksty.solutions.chapter1.section3;
 
-import droksty.collections.Deque;           // ADT developed for this exercise
+import droksty.collections.Deque;               // ADT developed for this exercise
 import droksty.collections.ResizingArrayDeque;  // ADT developed for this exercise
 
 public class Exercise33 {
