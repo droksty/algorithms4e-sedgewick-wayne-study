@@ -24,6 +24,19 @@ public class Queue<E> implements Iterable<E> {
     public Queue() {}
 
     /**
+     * Creates an independent copy of q.
+     * @param q The {@code Queue} to copy.
+     */
+    public Queue(Queue<E> q) {
+        int size = q.size();
+        for (int i = 0; i < size; i++) {
+            E e = q.dequeue();
+            this.enqueue(e);
+            q.enqueue(e);
+        }
+    }
+
+    /**
      * Returns true if this {@code Queue} is empty.
      * @return  {@code true} if this {@code Queue} is empty, {@code false} otherwise.
      */
