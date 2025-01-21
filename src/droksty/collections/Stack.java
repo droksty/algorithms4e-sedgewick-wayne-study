@@ -18,6 +18,32 @@ public class Stack<E> implements Iterable<E> {
     }
 
     /**
+     * Instantiates a new, empty {@code Stack}
+     */
+    public Stack() {}
+
+    /**
+     * Creates an independent copy of s.
+     * @param s The {@code Stack} to copy.
+     */
+    @SuppressWarnings("CopyConstructorMissesField")
+    public Stack(Stack<E> s) {
+        Stack<E> temp = new Stack<>();
+        int size = s.size();
+
+        // collect elements in proper order
+        for (int i = 0; i < size; i++) {
+            temp.push(s.pop());
+        }
+
+        for (int i = 0; i < size; i++) {
+            E e = temp.pop();
+            this.push(e);
+            s.push(e);
+        }
+    }
+
+    /**
      * Returns true if this {@code Stack} is empty.
      * @return  {@code true} if this {@code Stack} is empty, {@code false} otherwise.
      */
