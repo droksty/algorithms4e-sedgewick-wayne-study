@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * Generic FIFO stack that supports the standard push and pop operations,
+ * Generic LIFO stack that supports the standard push and pop operations,
  * with additional methods developed as solutions to various exercises.
  * @param <E>   The type of elements in this {@link Stack}.
  */
